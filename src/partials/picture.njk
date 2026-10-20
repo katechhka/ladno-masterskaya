@@ -1,0 +1,7 @@
+{% macro picture(image, className='', sizes='100vw', priority=false) %}
+<picture class="{{ className }}">
+  <source type="image/avif" srcset="{{ image.avifSrcset }}" sizes="{{ sizes }}">
+  <source type="image/webp" srcset="{{ image.webpSrcset }}" sizes="{{ sizes }}">
+  <img src="{{ image.src }}" width="{{ image.width }}" height="{{ image.height }}" alt="{{ image.alt }}" loading="{% if priority %}eager{% else %}lazy{% endif %}" fetchpriority="{% if priority %}high{% else %}auto{% endif %}" decoding="async" style="object-position: {{ image.focalPoint }}">
+</picture>
+{% endmacro %}

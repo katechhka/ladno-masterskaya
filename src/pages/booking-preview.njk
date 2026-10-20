@@ -1,0 +1,24 @@
+{% extends "pages/layout.njk" %}
+{% block content %}
+<div class="container">{% include "partials/breadcrumbs.njk" %}<header class="page-heading"><p class="eyebrow">Демонстрационная запись</p><h1 class="page-heading__title">{% if page.kind == 'manage' %}Ваша запись.<br>В одном месте.{% else %}Оставим<br>вам место.{% endif %}</h1></header></div>
+<section class="booking-preview container">
+  <div class="booking-preview__summary" data-booking-preview aria-live="polite"><p class="loading-state" role="status">Смотрим данные записи…</p></div>
+  <aside class="booking-preview__notice"><p class="eyebrow">Портфолио-проект</p><h2>Попробуйте.<br>Это демоверсия.</h2><p>{{ site.demoNotice }}</p><p>Используйте вымышленные контакты. Бронь сохраняется в демонстрационной базе; настоящего занятия не будет. Письма и SMS не отправляются.</p><p><strong>{{ site.paymentNotice }}.</strong> В демоверсии платить ничего не нужно.</p><p>Отменить запись можно по персональной ссылке до начала занятия. Сохраните её и не передавайте посторонним.</p><a class="text-link" href="/schedule/">Вернуться к расписанию ↗</a></aside>
+</section>
+<template id="booking-form-template">
+  <form class="booking-form" data-contact-form novalidate>
+    <h2>Кто придёт?</h2><p>Один контакт для всей группы. Все поля, кроме комментария, обязательны.</p>
+    <div class="booking-form__grid">
+      <label class="field"><span class="field__label">Ваше имя</span><input class="field__input" name="name" autocomplete="given-name" required minlength="2" maxlength="100" aria-describedby="error-name"><span class="field__error" id="error-name" data-error="name"></span></label>
+      <label class="field"><span class="field__label">Номер телефона</span><input class="field__input" name="phone" type="tel" autocomplete="tel" inputmode="tel" required maxlength="18" placeholder="+7 (900) 000-00-00" aria-describedby="phone-help error-phone"><span class="field__help" id="phone-help">Для +7 — десять цифр после кода страны. Другие номера вводите с «+» и кодом страны.</span><span class="field__error" id="error-phone" data-error="phone"></span></label>
+      <label class="field"><span class="field__label">Email</span><input class="field__input" name="email" type="email" autocomplete="email" required maxlength="254" aria-describedby="error-email"><span class="field__error" id="error-email" data-error="email"></span></label>
+      <label class="field"><span class="field__label">Количество участников</span><input class="field__input" name="quantity" type="number" inputmode="numeric" min="1" max="20" step="1" required aria-describedby="error-quantity"><span class="field__error" id="error-quantity" data-error="quantity"></span></label>
+    </div>
+    <label class="field"><span class="field__label">Комментарий — необязательно</span><textarea class="field__input" name="comment" rows="3" maxlength="1000" aria-describedby="error-comment"></textarea><span class="field__error" id="error-comment" data-error="comment"></span></label>
+    <label class="booking-form__consent"><input name="policyConsent" type="checkbox" required aria-describedby="error-policyConsent"><span>Ознакомился с <a href="/privacy/" target="_blank" rel="noopener">политикой обработки персональных данных</a>.</span></label><span class="field__error" id="error-policyConsent" data-error="policyConsent"></span>
+    <label class="booking-form__consent"><input name="privacyConsent" type="checkbox" required aria-describedby="error-privacyConsent"><span>Даю <a href="/consent/" target="_blank" rel="noopener">согласие на обработку персональных данных</a> для демонстрационного бронирования.</span></label><span class="field__error" id="error-privacyConsent" data-error="privacyConsent"></span>
+    <label class="booking-form__consent"><input name="rulesConsent" type="checkbox" required aria-describedby="error-rulesConsent"><span>Принимаю <a href="/rules/" target="_blank" rel="noopener">правила посещения и отмены</a>. Понимаю, что мастерская вымышленная.</span></label><span class="field__error" id="error-rulesConsent" data-error="rulesConsent"></span>
+    <button class="button" type="submit">Проверить запись ↗</button>
+  </form>
+</template>
+{% endblock %}

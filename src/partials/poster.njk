@@ -1,0 +1,19 @@
+{% from "partials/picture.njk" import picture %}
+<section class="workshop-poster container" aria-labelledby="hero-title">
+  <div class="workshop-poster__meta"><span>Творческая мастерская в Туле</span><span>Для тех, кому хочется попробовать</span></div>
+  <h1 class="workshop-poster__title" id="hero-title"><span>Руки —</span> <span>в дело.</span></h1>
+  <p class="workshop-poster__intro">Глина, краски и другие хорошие поводы отложить телефон.<br> Приходите без опыта. Сделаем что-нибудь ваше.</p>
+  <div class="material-board" data-material-board>
+    <div class="material-board__selectors" role="group" aria-label="Рассмотреть материалы мастерской"><button class="material-board__selector material-board__selector--active" type="button" aria-pressed="true" aria-controls="material-clay" data-material-select="clay"><span>01</span> Глина</button><button class="material-board__selector" type="button" aria-pressed="false" aria-controls="material-paint" data-material-select="paint"><span>02</span> Краска</button><button class="material-board__selector" type="button" aria-pressed="false" aria-controls="material-print" data-material-select="print"><span>03</span> Отпечаток</button></div>
+    <figure class="material-board__sample material-board__sample--left" aria-hidden="true">{{ picture(images['watercolor-botany'], 'material-board__sample-picture', '(max-width: 600px) 120px, 230px') }}<figcaption>Проба цвета / 02</figcaption></figure>
+    <div class="material-board__main">
+      <figure class="material-board__panel" data-material-panel="clay" id="material-clay">{{ picture(images['first-wheel'], 'material-board__picture', '(max-width: 600px) 100vw, 70vw', true) }}<figcaption class="material-board__caption"><span>Первый круг</span><span>Глина. Вода. Ваши руки.</span></figcaption></figure>
+      <figure class="material-board__panel" data-material-panel="paint" id="material-paint" hidden>{{ picture(images['quiet-morning'], 'material-board__picture', '(max-width: 600px) 100vw, 70vw') }}<figcaption class="material-board__caption"><span>Цвет тихого утра</span><span>Один холст. Ваше сочетание цветов.</span></figcaption></figure>
+      <figure class="material-board__panel" data-material-panel="print" id="material-print" hidden>{{ picture(images['personal-mark'], 'material-board__picture', '(max-width: 600px) 100vw, 70vw') }}<figcaption class="material-board__caption"><span>Свой знак</span><span>Рисунок. Резец. Первый оттиск.</span></figcaption></figure>
+    </div>
+    <figure class="material-board__sample material-board__sample--right" aria-hidden="true">{{ picture(images['character-plate'], 'material-board__sample-picture', '(max-width: 600px) 120px, 220px') }}<figcaption>Ручная работа / 03</figcaption></figure>
+    <div class="material-board__note" aria-hidden="true"><span>«Я не умею»?</span><strong>Тем<br>интереснее.</strong><svg viewBox="0 0 100 48" fill="none"><path d="M95 5C72 3 70 39 11 32m0 0 15-9M11 32l17 10" stroke="currentColor" stroke-width="2"/></svg></div>
+    <a class="material-board__ticket" href="/master-classes/"><span class="material-board__ticket-title">Выбрать<br>мастер-класс</span><span class="material-board__ticket-note">Материалы включены.<br>Любопытство — с вас.</span><svg viewBox="0 0 40 40" fill="none" aria-hidden="true"><path d="M6 34 34 6M7 6h27v27" stroke="currentColor" stroke-width="2.5"/></svg></a>
+  </div>
+  <div class="workshop-poster__bottom"><p>14 занятий / 7 направлений / Можно с нуля</p><a class="text-link" href="/schedule/">Посмотреть расписание <span aria-hidden="true">↗</span></a></div>
+</section>

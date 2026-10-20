@@ -1,0 +1,136 @@
+.button
+  display inline-flex
+  align-items center
+  justify-content center
+  gap 24px
+  min-height 56px
+  padding 14px 22px
+  border 2px solid var(--color-ink)
+  border-radius 0
+  background var(--color-cobalt)
+  box-shadow 4px 4px 0 var(--color-ink)
+  color var(--color-white)
+  font-size 14px
+  font-weight 650
+  line-height 1.4
+  text-align center
+  text-decoration none
+  transition transform .18s, box-shadow .18s, background .18s
+  &:hover
+    transform translate(-1px, -1px)
+    box-shadow 6px 6px 0 var(--color-ink)
+    background var(--color-clay)
+  &:active
+    transform translate(3px, 3px)
+    box-shadow 1px 1px 0 var(--color-ink)
+  &--secondary
+    background var(--color-paper)
+    color var(--color-ink)
+    &:hover
+      background #e4dfd2
+  &:disabled
+    border-color #bcb7a9
+    background #e5dfd3
+    box-shadow none
+    color #757166
+    transform none
+  &__arrow
+    width 24px
+    height 20px
+
+.text-link
+  border 0
+  background transparent
+  color inherit
+  display inline-flex
+  gap 12px
+  align-items center
+  min-height 44px
+  padding-block 8px
+  padding-inline 0
+  font-size 14px
+  font-weight 600
+  text-decoration-thickness 1px
+  &:hover
+    color var(--color-clay)
+
+.filter-chip
+  display inline-flex
+  justify-content center
+  align-items center
+  min-height 44px
+  padding 10px 16px
+  border 1px solid var(--color-ink)
+  border-radius 0
+  background transparent
+  color var(--color-ink)
+  font-size 13px
+  font-weight 550
+  &:hover
+    background #e4dfd2
+  &--active
+    background var(--color-cobalt)
+    color var(--color-white)
+    &:hover
+      background var(--color-cobalt)
+
+.field
+  display grid
+  min-width 0
+  gap 9px
+  &__label
+    font-size 13px
+    font-weight 650
+  &__input
+    width 100%
+    min-width 0
+    min-height 54px
+    padding 13px 15px
+    border 1px solid var(--color-ink)
+    border-bottom-width 3px
+    border-radius 0
+    background var(--color-white)
+    color var(--color-ink)
+    font-size 16px
+    &::placeholder
+      color var(--color-muted)
+    &[aria-invalid='true']
+      border-color var(--color-error)
+    &:disabled
+      background #e5dfd3
+      color var(--color-muted)
+  &__help, &__error
+    font-size 12px
+    line-height 1.5
+  &__help
+    color var(--color-muted)
+  &__error
+    color var(--color-error)
+
+.notice
+  padding 18px 20px
+  border 1px solid currentColor
+  border-left-width 6px
+  background #e9edf2
+  color #263d66
+  font-size 14px
+  line-height 1.55
+  &--success
+    background #e6e9dd
+    color #3c4b32
+  &--error
+    background #f3e4dd
+    color #8e3028
+
+.availability
+  display inline-flex
+  gap 8px
+  align-items center
+  padding 5px 9px
+  border 1px solid var(--color-olive)
+  color var(--color-olive)
+  font-size 12px
+  font-weight 600
+  &--full
+    border-color var(--color-muted)
+    color var(--color-muted)

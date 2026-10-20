@@ -1,0 +1,885 @@
+{
+  "generator": "built-in image_gen",
+  "images": {
+    "hero": {
+      "id": "hero",
+      "alt": "Руки формируют глиняную чашу за деревянным столом в светлой мастерской",
+      "width": 1536,
+      "height": 1024,
+      "focalPoint": "59% 50%",
+      "src": "/media/hero-1536.webp",
+      "webpSrcset": "/media/hero-480.webp 480w, /media/hero-800.webp 800w, /media/hero-1200.webp 1200w, /media/hero-1536.webp 1536w",
+      "avifSrcset": "/media/hero-480.avif 480w, /media/hero-800.avif 800w, /media/hero-1200.avif 1200w, /media/hero-1536.avif 1536w",
+      "variants": [
+        {
+          "width": 480,
+          "height": 320,
+          "webp": "/media/hero-480.webp",
+          "avif": "/media/hero-480.avif",
+          "webpBytes": 22546,
+          "avifBytes": 12010
+        },
+        {
+          "width": 800,
+          "height": 533,
+          "webp": "/media/hero-800.webp",
+          "avif": "/media/hero-800.avif",
+          "webpBytes": 49192,
+          "avifBytes": 24258
+        },
+        {
+          "width": 1200,
+          "height": 800,
+          "webp": "/media/hero-1200.webp",
+          "avif": "/media/hero-1200.avif",
+          "webpBytes": 92438,
+          "avifBytes": 42491
+        },
+        {
+          "width": 1536,
+          "height": 1024,
+          "webp": "/media/hero-1536.webp",
+          "avif": "/media/hero-1536.avif",
+          "webpBytes": 131096,
+          "avifBytes": 58885
+        }
+      ]
+    },
+    "character-plate": {
+      "id": "character-plate",
+      "alt": "Кисть рисует кобальтовый узор ангобом на светлой глиняной тарелке",
+      "width": 1536,
+      "height": 1024,
+      "focalPoint": "50% 50%",
+      "src": "/media/character-plate-1200.webp",
+      "webpSrcset": "/media/character-plate-480.webp 480w, /media/character-plate-800.webp 800w, /media/character-plate-1200.webp 1200w",
+      "avifSrcset": "/media/character-plate-480.avif 480w, /media/character-plate-800.avif 800w, /media/character-plate-1200.avif 1200w",
+      "variants": [
+        {
+          "width": 480,
+          "height": 320,
+          "webp": "/media/character-plate-480.webp",
+          "avif": "/media/character-plate-480.avif",
+          "webpBytes": 24310,
+          "avifBytes": 13414
+        },
+        {
+          "width": 800,
+          "height": 533,
+          "webp": "/media/character-plate-800.webp",
+          "avif": "/media/character-plate-800.avif",
+          "webpBytes": 49642,
+          "avifBytes": 24454
+        },
+        {
+          "width": 1200,
+          "height": 800,
+          "webp": "/media/character-plate-1200.webp",
+          "avif": "/media/character-plate-1200.avif",
+          "webpBytes": 86438,
+          "avifBytes": 39341
+        }
+      ]
+    },
+    "city-impression": {
+      "id": "city-impression",
+      "alt": "Пластина с процарапанными городскими линиями и глубокопечатный оттиск",
+      "width": 1536,
+      "height": 1024,
+      "focalPoint": "50% 50%",
+      "src": "/media/city-impression-1200.webp",
+      "webpSrcset": "/media/city-impression-480.webp 480w, /media/city-impression-800.webp 800w, /media/city-impression-1200.webp 1200w",
+      "avifSrcset": "/media/city-impression-480.avif 480w, /media/city-impression-800.avif 800w, /media/city-impression-1200.avif 1200w",
+      "variants": [
+        {
+          "width": 480,
+          "height": 320,
+          "webp": "/media/city-impression-480.webp",
+          "avif": "/media/city-impression-480.avif",
+          "webpBytes": 30838,
+          "avifBytes": 17087
+        },
+        {
+          "width": 800,
+          "height": 533,
+          "webp": "/media/city-impression-800.webp",
+          "avif": "/media/city-impression-800.avif",
+          "webpBytes": 75342,
+          "avifBytes": 41922
+        },
+        {
+          "width": 1200,
+          "height": 800,
+          "webp": "/media/city-impression-1200.webp",
+          "avif": "/media/city-impression-1200.avif",
+          "webpBytes": 147766,
+          "avifBytes": 79754
+        }
+      ]
+    },
+    "city-lines": {
+      "id": "city-lines",
+      "alt": "Рука карандашом намечает перспективу городского фасада на бумаге",
+      "width": 1536,
+      "height": 1024,
+      "focalPoint": "50% 50%",
+      "src": "/media/city-lines-1200.webp",
+      "webpSrcset": "/media/city-lines-480.webp 480w, /media/city-lines-800.webp 800w, /media/city-lines-1200.webp 1200w",
+      "avifSrcset": "/media/city-lines-480.avif 480w, /media/city-lines-800.avif 800w, /media/city-lines-1200.avif 1200w",
+      "variants": [
+        {
+          "width": 480,
+          "height": 320,
+          "webp": "/media/city-lines-480.webp",
+          "avif": "/media/city-lines-480.avif",
+          "webpBytes": 31150,
+          "avifBytes": 17239
+        },
+        {
+          "width": 800,
+          "height": 533,
+          "webp": "/media/city-lines-800.webp",
+          "avif": "/media/city-lines-800.avif",
+          "webpBytes": 78502,
+          "avifBytes": 42839
+        },
+        {
+          "width": 1200,
+          "height": 800,
+          "webp": "/media/city-lines-1200.webp",
+          "avif": "/media/city-lines-1200.avif",
+          "webpBytes": 159646,
+          "avifBytes": 83668
+        }
+      ]
+    },
+    "clay-flowers": {
+      "id": "clay-flowers",
+      "alt": "Тонкие лепестки цветов из полимерной глины на рабочей плитке",
+      "width": 1536,
+      "height": 1024,
+      "focalPoint": "50% 50%",
+      "src": "/media/clay-flowers-1200.webp",
+      "webpSrcset": "/media/clay-flowers-480.webp 480w, /media/clay-flowers-800.webp 800w, /media/clay-flowers-1200.webp 1200w",
+      "avifSrcset": "/media/clay-flowers-480.avif 480w, /media/clay-flowers-800.avif 800w, /media/clay-flowers-1200.avif 1200w",
+      "variants": [
+        {
+          "width": 480,
+          "height": 320,
+          "webp": "/media/clay-flowers-480.webp",
+          "avif": "/media/clay-flowers-480.avif",
+          "webpBytes": 26416,
+          "avifBytes": 14788
+        },
+        {
+          "width": 800,
+          "height": 533,
+          "webp": "/media/clay-flowers-800.webp",
+          "avif": "/media/clay-flowers-800.avif",
+          "webpBytes": 58566,
+          "avifBytes": 30364
+        },
+        {
+          "width": 1200,
+          "height": 800,
+          "webp": "/media/clay-flowers-1200.webp",
+          "avif": "/media/clay-flowers-1200.avif",
+          "webpBytes": 106218,
+          "avifBytes": 51059
+        }
+      ]
+    },
+    "clay-tools": {
+      "id": "clay-tools",
+      "alt": "Деревянные стеки, губка, петля и миска со шликером для работы с глиной",
+      "width": 1536,
+      "height": 1024,
+      "focalPoint": "50% 50%",
+      "src": "/media/clay-tools-1200.webp",
+      "webpSrcset": "/media/clay-tools-480.webp 480w, /media/clay-tools-800.webp 800w, /media/clay-tools-1200.webp 1200w",
+      "avifSrcset": "/media/clay-tools-480.avif 480w, /media/clay-tools-800.avif 800w, /media/clay-tools-1200.avif 1200w",
+      "variants": [
+        {
+          "width": 480,
+          "height": 320,
+          "webp": "/media/clay-tools-480.webp",
+          "avif": "/media/clay-tools-480.avif",
+          "webpBytes": 32080,
+          "avifBytes": 16806
+        },
+        {
+          "width": 800,
+          "height": 533,
+          "webp": "/media/clay-tools-800.webp",
+          "avif": "/media/clay-tools-800.avif",
+          "webpBytes": 87514,
+          "avifBytes": 47283
+        },
+        {
+          "width": 1200,
+          "height": 800,
+          "webp": "/media/clay-tools-1200.webp",
+          "avif": "/media/clay-tools-1200.avif",
+          "webpBytes": 187374,
+          "avifBytes": 97049
+        }
+      ]
+    },
+    "color-earrings": {
+      "id": "color-earrings",
+      "alt": "Терракотовые и кобальтовые детали серёг из полимерной глины перед сборкой",
+      "width": 1536,
+      "height": 1024,
+      "focalPoint": "50% 50%",
+      "src": "/media/color-earrings-1200.webp",
+      "webpSrcset": "/media/color-earrings-480.webp 480w, /media/color-earrings-800.webp 800w, /media/color-earrings-1200.webp 1200w",
+      "avifSrcset": "/media/color-earrings-480.avif 480w, /media/color-earrings-800.avif 800w, /media/color-earrings-1200.avif 1200w",
+      "variants": [
+        {
+          "width": 480,
+          "height": 320,
+          "webp": "/media/color-earrings-480.webp",
+          "avif": "/media/color-earrings-480.avif",
+          "webpBytes": 33580,
+          "avifBytes": 18733
+        },
+        {
+          "width": 800,
+          "height": 533,
+          "webp": "/media/color-earrings-800.webp",
+          "avif": "/media/color-earrings-800.avif",
+          "webpBytes": 88028,
+          "avifBytes": 46565
+        },
+        {
+          "width": 1200,
+          "height": 800,
+          "webp": "/media/color-earrings-1200.webp",
+          "avif": "/media/color-earrings-1200.avif",
+          "webpBytes": 167624,
+          "avifBytes": 81165
+        }
+      ]
+    },
+    "first-wheel": {
+      "id": "first-wheel",
+      "alt": "Руки поднимают стенки небольшой глиняной пиалы на гончарном круге",
+      "width": 1536,
+      "height": 1024,
+      "focalPoint": "50% 50%",
+      "src": "/media/first-wheel-1200.webp",
+      "webpSrcset": "/media/first-wheel-480.webp 480w, /media/first-wheel-800.webp 800w, /media/first-wheel-1200.webp 1200w",
+      "avifSrcset": "/media/first-wheel-480.avif 480w, /media/first-wheel-800.avif 800w, /media/first-wheel-1200.avif 1200w",
+      "variants": [
+        {
+          "width": 480,
+          "height": 320,
+          "webp": "/media/first-wheel-480.webp",
+          "avif": "/media/first-wheel-480.avif",
+          "webpBytes": 22214,
+          "avifBytes": 11935
+        },
+        {
+          "width": 800,
+          "height": 533,
+          "webp": "/media/first-wheel-800.webp",
+          "avif": "/media/first-wheel-800.avif",
+          "webpBytes": 45598,
+          "avifBytes": 22322
+        },
+        {
+          "width": 1200,
+          "height": 800,
+          "webp": "/media/first-wheel-1200.webp",
+          "avif": "/media/first-wheel-1200.avif",
+          "webpBytes": 76242,
+          "avifBytes": 35997
+        }
+      ]
+    },
+    "gallery-ceramic-result": {
+      "id": "gallery-ceramic-result",
+      "alt": "Готовые керамические чашка, пиала и тарелка с прозрачной глазурью",
+      "width": 1536,
+      "height": 1024,
+      "focalPoint": "50% 50%",
+      "src": "/media/gallery-ceramic-result-1200.webp",
+      "webpSrcset": "/media/gallery-ceramic-result-480.webp 480w, /media/gallery-ceramic-result-800.webp 800w, /media/gallery-ceramic-result-1200.webp 1200w",
+      "avifSrcset": "/media/gallery-ceramic-result-480.avif 480w, /media/gallery-ceramic-result-800.avif 800w, /media/gallery-ceramic-result-1200.avif 1200w",
+      "variants": [
+        {
+          "width": 480,
+          "height": 320,
+          "webp": "/media/gallery-ceramic-result-480.webp",
+          "avif": "/media/gallery-ceramic-result-480.avif",
+          "webpBytes": 27678,
+          "avifBytes": 15248
+        },
+        {
+          "width": 800,
+          "height": 533,
+          "webp": "/media/gallery-ceramic-result-800.webp",
+          "avif": "/media/gallery-ceramic-result-800.avif",
+          "webpBytes": 63426,
+          "avifBytes": 33359
+        },
+        {
+          "width": 1200,
+          "height": 800,
+          "webp": "/media/gallery-ceramic-result-1200.webp",
+          "avif": "/media/gallery-ceramic-result-1200.avif",
+          "webpBytes": 114996,
+          "avifBytes": 57902
+        }
+      ]
+    },
+    "gallery-jewelry-detail": {
+      "id": "gallery-jewelry-detail",
+      "alt": "Готовая пара геометричных серёг из полимерной глины на керамическом подносе",
+      "width": 1536,
+      "height": 1024,
+      "focalPoint": "50% 50%",
+      "src": "/media/gallery-jewelry-detail-1200.webp",
+      "webpSrcset": "/media/gallery-jewelry-detail-480.webp 480w, /media/gallery-jewelry-detail-800.webp 800w, /media/gallery-jewelry-detail-1200.webp 1200w",
+      "avifSrcset": "/media/gallery-jewelry-detail-480.avif 480w, /media/gallery-jewelry-detail-800.avif 800w, /media/gallery-jewelry-detail-1200.avif 1200w",
+      "variants": [
+        {
+          "width": 480,
+          "height": 320,
+          "webp": "/media/gallery-jewelry-detail-480.webp",
+          "avif": "/media/gallery-jewelry-detail-480.avif",
+          "webpBytes": 24052,
+          "avifBytes": 11988
+        },
+        {
+          "width": 800,
+          "height": 533,
+          "webp": "/media/gallery-jewelry-detail-800.webp",
+          "avif": "/media/gallery-jewelry-detail-800.avif",
+          "webpBytes": 53782,
+          "avifBytes": 24658
+        },
+        {
+          "width": 1200,
+          "height": 800,
+          "webp": "/media/gallery-jewelry-detail-1200.webp",
+          "avif": "/media/gallery-jewelry-detail-1200.avif",
+          "webpBytes": 98330,
+          "avifBytes": 42836
+        }
+      ]
+    },
+    "gallery-paint-detail": {
+      "id": "gallery-paint-detail",
+      "alt": "Фактурные терракотовые и кобальтовые мазки акрила на холсте",
+      "width": 1536,
+      "height": 1024,
+      "focalPoint": "50% 50%",
+      "src": "/media/gallery-paint-detail-1200.webp",
+      "webpSrcset": "/media/gallery-paint-detail-480.webp 480w, /media/gallery-paint-detail-800.webp 800w, /media/gallery-paint-detail-1200.webp 1200w",
+      "avifSrcset": "/media/gallery-paint-detail-480.avif 480w, /media/gallery-paint-detail-800.avif 800w, /media/gallery-paint-detail-1200.avif 1200w",
+      "variants": [
+        {
+          "width": 480,
+          "height": 320,
+          "webp": "/media/gallery-paint-detail-480.webp",
+          "avif": "/media/gallery-paint-detail-480.avif",
+          "webpBytes": 51434,
+          "avifBytes": 32860
+        },
+        {
+          "width": 800,
+          "height": 533,
+          "webp": "/media/gallery-paint-detail-800.webp",
+          "avif": "/media/gallery-paint-detail-800.avif",
+          "webpBytes": 130704,
+          "avifBytes": 82109
+        },
+        {
+          "width": 1200,
+          "height": 800,
+          "webp": "/media/gallery-paint-detail-1200.webp",
+          "avif": "/media/gallery-paint-detail-1200.avif",
+          "webpBytes": 255264,
+          "avifBytes": 146910
+        }
+      ]
+    },
+    "gallery-print-detail": {
+      "id": "gallery-print-detail",
+      "alt": "Растительная линогравюра терракотовой краской на фактурной бумаге",
+      "width": 1536,
+      "height": 1024,
+      "focalPoint": "50% 50%",
+      "src": "/media/gallery-print-detail-1200.webp",
+      "webpSrcset": "/media/gallery-print-detail-480.webp 480w, /media/gallery-print-detail-800.webp 800w, /media/gallery-print-detail-1200.webp 1200w",
+      "avifSrcset": "/media/gallery-print-detail-480.avif 480w, /media/gallery-print-detail-800.avif 800w, /media/gallery-print-detail-1200.avif 1200w",
+      "variants": [
+        {
+          "width": 480,
+          "height": 320,
+          "webp": "/media/gallery-print-detail-480.webp",
+          "avif": "/media/gallery-print-detail-480.avif",
+          "webpBytes": 31338,
+          "avifBytes": 17761
+        },
+        {
+          "width": 800,
+          "height": 533,
+          "webp": "/media/gallery-print-detail-800.webp",
+          "avif": "/media/gallery-print-detail-800.avif",
+          "webpBytes": 75488,
+          "avifBytes": 39865
+        },
+        {
+          "width": 1200,
+          "height": 800,
+          "webp": "/media/gallery-print-detail-1200.webp",
+          "avif": "/media/gallery-print-detail-1200.avif",
+          "webpBytes": 145036,
+          "avifBytes": 72496
+        }
+      ]
+    },
+    "handmade-cup": {
+      "id": "handmade-cup",
+      "alt": "Ладони формируют стенки глиняной чашки вручную на рабочей доске",
+      "width": 1536,
+      "height": 1024,
+      "focalPoint": "50% 50%",
+      "src": "/media/handmade-cup-1200.webp",
+      "webpSrcset": "/media/handmade-cup-480.webp 480w, /media/handmade-cup-800.webp 800w, /media/handmade-cup-1200.webp 1200w",
+      "avifSrcset": "/media/handmade-cup-480.avif 480w, /media/handmade-cup-800.avif 800w, /media/handmade-cup-1200.avif 1200w",
+      "variants": [
+        {
+          "width": 480,
+          "height": 320,
+          "webp": "/media/handmade-cup-480.webp",
+          "avif": "/media/handmade-cup-480.avif",
+          "webpBytes": 21348,
+          "avifBytes": 10929
+        },
+        {
+          "width": 800,
+          "height": 533,
+          "webp": "/media/handmade-cup-800.webp",
+          "avif": "/media/handmade-cup-800.avif",
+          "webpBytes": 46208,
+          "avifBytes": 21913
+        },
+        {
+          "width": 1200,
+          "height": 800,
+          "webp": "/media/handmade-cup-1200.webp",
+          "avif": "/media/handmade-cup-1200.avif",
+          "webpBytes": 82066,
+          "avifBytes": 36836
+        }
+      ]
+    },
+    "light-on-things": {
+      "id": "light-on-things",
+      "alt": "Штриховка графитным карандашом на рисунке кружки и яблока",
+      "width": 1536,
+      "height": 1024,
+      "focalPoint": "50% 50%",
+      "src": "/media/light-on-things-1200.webp",
+      "webpSrcset": "/media/light-on-things-480.webp 480w, /media/light-on-things-800.webp 800w, /media/light-on-things-1200.webp 1200w",
+      "avifSrcset": "/media/light-on-things-480.avif 480w, /media/light-on-things-800.avif 800w, /media/light-on-things-1200.avif 1200w",
+      "variants": [
+        {
+          "width": 480,
+          "height": 320,
+          "webp": "/media/light-on-things-480.webp",
+          "avif": "/media/light-on-things-480.avif",
+          "webpBytes": 27390,
+          "avifBytes": 14020
+        },
+        {
+          "width": 800,
+          "height": 533,
+          "webp": "/media/light-on-things-800.webp",
+          "avif": "/media/light-on-things-800.avif",
+          "webpBytes": 68598,
+          "avifBytes": 37188
+        },
+        {
+          "width": 1200,
+          "height": 800,
+          "webp": "/media/light-on-things-1200.webp",
+          "avif": "/media/light-on-things-1200.avif",
+          "webpBytes": 141664,
+          "avifBytes": 72245
+        }
+      ]
+    },
+    "little-guardian": {
+      "id": "little-guardian",
+      "alt": "Руки лепят округлого небольшого персонажа из светлой самозатвердевающей массы",
+      "width": 1536,
+      "height": 1024,
+      "focalPoint": "50% 50%",
+      "src": "/media/little-guardian-1200.webp",
+      "webpSrcset": "/media/little-guardian-480.webp 480w, /media/little-guardian-800.webp 800w, /media/little-guardian-1200.webp 1200w",
+      "avifSrcset": "/media/little-guardian-480.avif 480w, /media/little-guardian-800.avif 800w, /media/little-guardian-1200.avif 1200w",
+      "variants": [
+        {
+          "width": 480,
+          "height": 320,
+          "webp": "/media/little-guardian-480.webp",
+          "avif": "/media/little-guardian-480.avif",
+          "webpBytes": 21280,
+          "avifBytes": 11482
+        },
+        {
+          "width": 800,
+          "height": 533,
+          "webp": "/media/little-guardian-800.webp",
+          "avif": "/media/little-guardian-800.avif",
+          "webpBytes": 45056,
+          "avifBytes": 21866
+        },
+        {
+          "width": 1200,
+          "height": 800,
+          "webp": "/media/little-guardian-1200.webp",
+          "avif": "/media/little-guardian-1200.avif",
+          "webpBytes": 78366,
+          "avifBytes": 35662
+        }
+      ]
+    },
+    "materials-table": {
+      "id": "materials-table",
+      "alt": "Глина, бумага, краски, карандаши и льняная ткань на рабочем столе",
+      "width": 1536,
+      "height": 1024,
+      "focalPoint": "50% 50%",
+      "src": "/media/materials-table-1200.webp",
+      "webpSrcset": "/media/materials-table-480.webp 480w, /media/materials-table-800.webp 800w, /media/materials-table-1200.webp 1200w",
+      "avifSrcset": "/media/materials-table-480.avif 480w, /media/materials-table-800.avif 800w, /media/materials-table-1200.avif 1200w",
+      "variants": [
+        {
+          "width": 480,
+          "height": 320,
+          "webp": "/media/materials-table-480.webp",
+          "avif": "/media/materials-table-480.avif",
+          "webpBytes": 31000,
+          "avifBytes": 16483
+        },
+        {
+          "width": 800,
+          "height": 533,
+          "webp": "/media/materials-table-800.webp",
+          "avif": "/media/materials-table-800.avif",
+          "webpBytes": 80288,
+          "avifBytes": 41120
+        },
+        {
+          "width": 1200,
+          "height": 800,
+          "webp": "/media/materials-table-1200.webp",
+          "avif": "/media/materials-table-1200.avif",
+          "webpBytes": 171856,
+          "avifBytes": 86112
+        }
+      ]
+    },
+    "personal-mark": {
+      "id": "personal-mark",
+      "alt": "Резец и вырезанная растительная форма для линогравюры рядом с оттиском",
+      "width": 1536,
+      "height": 1024,
+      "focalPoint": "50% 50%",
+      "src": "/media/personal-mark-1200.webp",
+      "webpSrcset": "/media/personal-mark-480.webp 480w, /media/personal-mark-800.webp 800w, /media/personal-mark-1200.webp 1200w",
+      "avifSrcset": "/media/personal-mark-480.avif 480w, /media/personal-mark-800.avif 800w, /media/personal-mark-1200.avif 1200w",
+      "variants": [
+        {
+          "width": 480,
+          "height": 320,
+          "webp": "/media/personal-mark-480.webp",
+          "avif": "/media/personal-mark-480.avif",
+          "webpBytes": 34336,
+          "avifBytes": 20363
+        },
+        {
+          "width": 800,
+          "height": 533,
+          "webp": "/media/personal-mark-800.webp",
+          "avif": "/media/personal-mark-800.avif",
+          "webpBytes": 75450,
+          "avifBytes": 41987
+        },
+        {
+          "width": 1200,
+          "height": 800,
+          "webp": "/media/personal-mark-1200.webp",
+          "avif": "/media/personal-mark-1200.avif",
+          "webpBytes": 136686,
+          "avifBytes": 70742
+        }
+      ]
+    },
+    "printed-tote": {
+      "id": "printed-tote",
+      "alt": "На хлопковую сумку наносят терракотовый геометрический узор ручным штампом",
+      "width": 1536,
+      "height": 1024,
+      "focalPoint": "50% 50%",
+      "src": "/media/printed-tote-1200.webp",
+      "webpSrcset": "/media/printed-tote-480.webp 480w, /media/printed-tote-800.webp 800w, /media/printed-tote-1200.webp 1200w",
+      "avifSrcset": "/media/printed-tote-480.avif 480w, /media/printed-tote-800.avif 800w, /media/printed-tote-1200.avif 1200w",
+      "variants": [
+        {
+          "width": 480,
+          "height": 320,
+          "webp": "/media/printed-tote-480.webp",
+          "avif": "/media/printed-tote-480.avif",
+          "webpBytes": 30358,
+          "avifBytes": 16737
+        },
+        {
+          "width": 800,
+          "height": 533,
+          "webp": "/media/printed-tote-800.webp",
+          "avif": "/media/printed-tote-800.avif",
+          "webpBytes": 70656,
+          "avifBytes": 34216
+        },
+        {
+          "width": 1200,
+          "height": 800,
+          "webp": "/media/printed-tote-1200.webp",
+          "avif": "/media/printed-tote-1200.avif",
+          "webpBytes": 142514,
+          "avifBytes": 62890
+        }
+      ]
+    },
+    "process-together": {
+      "id": "process-together",
+      "alt": "Двое участников рисуют акварелью за общим рабочим столом",
+      "width": 1536,
+      "height": 1024,
+      "focalPoint": "50% 50%",
+      "src": "/media/process-together-1200.webp",
+      "webpSrcset": "/media/process-together-480.webp 480w, /media/process-together-800.webp 800w, /media/process-together-1200.webp 1200w",
+      "avifSrcset": "/media/process-together-480.avif 480w, /media/process-together-800.avif 800w, /media/process-together-1200.avif 1200w",
+      "variants": [
+        {
+          "width": 480,
+          "height": 320,
+          "webp": "/media/process-together-480.webp",
+          "avif": "/media/process-together-480.avif",
+          "webpBytes": 32748,
+          "avifBytes": 19562
+        },
+        {
+          "width": 800,
+          "height": 533,
+          "webp": "/media/process-together-800.webp",
+          "avif": "/media/process-together-800.avif",
+          "webpBytes": 69768,
+          "avifBytes": 39490
+        },
+        {
+          "width": 1200,
+          "height": 800,
+          "webp": "/media/process-together-1200.webp",
+          "avif": "/media/process-together-1200.avif",
+          "webpBytes": 125798,
+          "avifBytes": 65881
+        }
+      ]
+    },
+    "quiet-morning": {
+      "id": "quiet-morning",
+      "alt": "Кисть наносит тёплые акриловые мазки на натюрморт с кувшином",
+      "width": 1536,
+      "height": 1024,
+      "focalPoint": "50% 50%",
+      "src": "/media/quiet-morning-1200.webp",
+      "webpSrcset": "/media/quiet-morning-480.webp 480w, /media/quiet-morning-800.webp 800w, /media/quiet-morning-1200.webp 1200w",
+      "avifSrcset": "/media/quiet-morning-480.avif 480w, /media/quiet-morning-800.avif 800w, /media/quiet-morning-1200.avif 1200w",
+      "variants": [
+        {
+          "width": 480,
+          "height": 320,
+          "webp": "/media/quiet-morning-480.webp",
+          "avif": "/media/quiet-morning-480.avif",
+          "webpBytes": 30548,
+          "avifBytes": 18881
+        },
+        {
+          "width": 800,
+          "height": 533,
+          "webp": "/media/quiet-morning-800.webp",
+          "avif": "/media/quiet-morning-800.avif",
+          "webpBytes": 76286,
+          "avifBytes": 43723
+        },
+        {
+          "width": 1200,
+          "height": 800,
+          "webp": "/media/quiet-morning-1200.webp",
+          "avif": "/media/quiet-morning-1200.avif",
+          "webpBytes": 155150,
+          "avifBytes": 85487
+        }
+      ]
+    },
+    "stone-rhythm": {
+      "id": "stone-rhythm",
+      "alt": "Каменные бусины и инструменты разложены вокруг собираемого браслета",
+      "width": 1536,
+      "height": 1024,
+      "focalPoint": "50% 50%",
+      "src": "/media/stone-rhythm-1200.webp",
+      "webpSrcset": "/media/stone-rhythm-480.webp 480w, /media/stone-rhythm-800.webp 800w, /media/stone-rhythm-1200.webp 1200w",
+      "avifSrcset": "/media/stone-rhythm-480.avif 480w, /media/stone-rhythm-800.avif 800w, /media/stone-rhythm-1200.avif 1200w",
+      "variants": [
+        {
+          "width": 480,
+          "height": 320,
+          "webp": "/media/stone-rhythm-480.webp",
+          "avif": "/media/stone-rhythm-480.avif",
+          "webpBytes": 30024,
+          "avifBytes": 15181
+        },
+        {
+          "width": 800,
+          "height": 533,
+          "webp": "/media/stone-rhythm-800.webp",
+          "avif": "/media/stone-rhythm-800.avif",
+          "webpBytes": 84818,
+          "avifBytes": 41088
+        },
+        {
+          "width": 1200,
+          "height": 800,
+          "webp": "/media/stone-rhythm-1200.webp",
+          "avif": "/media/stone-rhythm-1200.avif",
+          "webpBytes": 171008,
+          "avifBytes": 82287
+        }
+      ]
+    },
+    "studio-shelves": {
+      "id": "studio-shelves",
+      "alt": "Полки с керамикой, кистями, деревянными инструментами и льняными фартуками",
+      "width": 1536,
+      "height": 1024,
+      "focalPoint": "50% 50%",
+      "src": "/media/studio-shelves-1200.webp",
+      "webpSrcset": "/media/studio-shelves-480.webp 480w, /media/studio-shelves-800.webp 800w, /media/studio-shelves-1200.webp 1200w",
+      "avifSrcset": "/media/studio-shelves-480.avif 480w, /media/studio-shelves-800.avif 800w, /media/studio-shelves-1200.avif 1200w",
+      "variants": [
+        {
+          "width": 480,
+          "height": 320,
+          "webp": "/media/studio-shelves-480.webp",
+          "avif": "/media/studio-shelves-480.avif",
+          "webpBytes": 25014,
+          "avifBytes": 15443
+        },
+        {
+          "width": 800,
+          "height": 533,
+          "webp": "/media/studio-shelves-800.webp",
+          "avif": "/media/studio-shelves-800.avif",
+          "webpBytes": 54712,
+          "avifBytes": 29564
+        },
+        {
+          "width": 1200,
+          "height": 800,
+          "webp": "/media/studio-shelves-1200.webp",
+          "avif": "/media/studio-shelves-1200.avif",
+          "webpBytes": 102028,
+          "avifBytes": 48876
+        }
+      ]
+    },
+    "studio-wide": {
+      "id": "studio-wide",
+      "alt": "Общий деревянный стол у окна и полки с материалами в вымышленной мастерской",
+      "width": 1536,
+      "height": 1024,
+      "focalPoint": "50% 50%",
+      "src": "/media/studio-wide-1536.webp",
+      "webpSrcset": "/media/studio-wide-480.webp 480w, /media/studio-wide-800.webp 800w, /media/studio-wide-1200.webp 1200w, /media/studio-wide-1536.webp 1536w",
+      "avifSrcset": "/media/studio-wide-480.avif 480w, /media/studio-wide-800.avif 800w, /media/studio-wide-1200.avif 1200w, /media/studio-wide-1536.avif 1536w",
+      "variants": [
+        {
+          "width": 480,
+          "height": 320,
+          "webp": "/media/studio-wide-480.webp",
+          "avif": "/media/studio-wide-480.avif",
+          "webpBytes": 26654,
+          "avifBytes": 16147
+        },
+        {
+          "width": 800,
+          "height": 533,
+          "webp": "/media/studio-wide-800.webp",
+          "avif": "/media/studio-wide-800.avif",
+          "webpBytes": 60782,
+          "avifBytes": 34152
+        },
+        {
+          "width": 1200,
+          "height": 800,
+          "webp": "/media/studio-wide-1200.webp",
+          "avif": "/media/studio-wide-1200.avif",
+          "webpBytes": 116962,
+          "avifBytes": 60614
+        },
+        {
+          "width": 1536,
+          "height": 1024,
+          "webp": "/media/studio-wide-1536.webp",
+          "avif": "/media/studio-wide-1536.avif",
+          "webpBytes": 173614,
+          "avifBytes": 85290
+        }
+      ]
+    },
+    "watercolor-botany": {
+      "id": "watercolor-botany",
+      "alt": "Прозрачные зелёные листья на двух листах акварельной бумаги",
+      "width": 1536,
+      "height": 1024,
+      "focalPoint": "50% 50%",
+      "src": "/media/watercolor-botany-1200.webp",
+      "webpSrcset": "/media/watercolor-botany-480.webp 480w, /media/watercolor-botany-800.webp 800w, /media/watercolor-botany-1200.webp 1200w",
+      "avifSrcset": "/media/watercolor-botany-480.avif 480w, /media/watercolor-botany-800.avif 800w, /media/watercolor-botany-1200.avif 1200w",
+      "variants": [
+        {
+          "width": 480,
+          "height": 320,
+          "webp": "/media/watercolor-botany-480.webp",
+          "avif": "/media/watercolor-botany-480.avif",
+          "webpBytes": 32228,
+          "avifBytes": 18755
+        },
+        {
+          "width": 800,
+          "height": 533,
+          "webp": "/media/watercolor-botany-800.webp",
+          "avif": "/media/watercolor-botany-800.avif",
+          "webpBytes": 76812,
+          "avifBytes": 41033
+        },
+        {
+          "width": 1200,
+          "height": 800,
+          "webp": "/media/watercolor-botany-1200.webp",
+          "avif": "/media/watercolor-botany-1200.avif",
+          "webpBytes": 150914,
+          "avifBytes": 75420
+        }
+      ]
+    }
+  }
+}

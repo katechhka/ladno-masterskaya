@@ -1,0 +1,16 @@
+{
+  "quiet-morning": ["quiet-morning", "gallery-paint-detail", "materials-table"],
+  "watercolor-botany": ["watercolor-botany", "process-together", "materials-table"],
+  "light-on-things": ["light-on-things", "materials-table", "studio-wide"],
+  "city-lines": ["city-lines", "materials-table", "studio-wide"],
+  "little-guardian": ["little-guardian", "materials-table", "studio-wide"],
+  "clay-flowers": ["clay-flowers", "materials-table", "studio-wide"],
+  "personal-mark": ["personal-mark", "gallery-print-detail", "studio-wide"],
+  "city-impression": ["city-impression", "studio-wide", "materials-table"],
+  "color-earrings": ["color-earrings", "gallery-jewelry-detail", "materials-table"],
+  "stone-rhythm": ["stone-rhythm", "studio-wide", "materials-table"],
+  "handmade-cup": ["handmade-cup", "gallery-ceramic-result", "clay-tools"],
+  "first-wheel": ["first-wheel", "gallery-ceramic-result", "studio-shelves"],
+  "character-plate": ["character-plate", "gallery-ceramic-result", "clay-tools"],
+  "printed-tote": ["printed-tote", "materials-table", "studio-wide"]
+}

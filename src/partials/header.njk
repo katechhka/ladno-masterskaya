@@ -1,0 +1,11 @@
+<header class="site-header">
+  <div class="site-header__inner container">
+    <a class="site-header__brand" href="/" aria-label="Ладно — главная"><span class="site-header__wordmark">ладно</span><span class="site-header__descriptor">Мастерская ручных открытий.<br>Приходите пробовать.</span></a>
+    <nav class="site-header__nav" aria-label="Основная навигация">
+      <a class="site-header__link" href="/master-classes/"{% if page.kind == 'catalog' or page.kind == 'workshop' %} aria-current="page"{% endif %}>Мастер-классы</a>
+      <a class="site-header__link" href="/schedule/"{% if page.kind == 'schedule' %} aria-current="page"{% endif %}>Расписание</a>
+      <a class="site-header__link" href="/#about">Мастерская</a>
+    </nav>
+    <span class="site-header__location">Тула</span>
+  </div>
+</header>

@@ -1,0 +1,8 @@
+{% extends "pages/layout.njk" %}
+{% block content %}
+<div class="container">{% include "partials/breadcrumbs.njk" %}<header class="page-heading"><p class="eyebrow">Редакция: {{ legal.revisionLabel }}</p><h1 class="page-heading__title">{{ page.document.title }}</h1><p class="page-heading__intro">{{ page.document.intro }}</p></header></div>
+<div class="info-layout container">
+  <nav class="info-nav" aria-label="Разделы документа">{% for section in page.document.sections %}<a href="#legal-{{ loop.index }}">{{ section.title }}</a>{% endfor %}<a href="/privacy/">Политика обработки данных</a><a href="/consent/">Согласие на обработку</a><a href="/cookies/">О cookie</a></nav>
+  <article class="info-document"><p class="notice">{{ legal.notice }}</p>{% for section in page.document.sections %}<section class="info-document__section" id="legal-{{ loop.index }}"><h2>{{ section.title }}</h2>{% for paragraph in section.paragraphs %}<p>{{ paragraph }}</p>{% endfor %}</section>{% endfor %}<div class="legal-actions"><a class="button button--secondary" href="/documents/{{ page.kind }}-{{ legal.version }}.pdf" download>Скачать PDF</a><button type="button" class="text-link" data-print-document>Распечатать</button></div></article>
+</div>
+{% endblock %}

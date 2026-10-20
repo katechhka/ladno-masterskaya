@@ -1,0 +1,77 @@
+.site-header
+  background var(--color-cobalt)
+  color var(--color-paper)
+  &__inner
+    min-height 88px
+    display flex
+    align-items center
+    justify-content space-between
+    gap 28px
+  &__brand
+    display flex
+    flex-shrink 0
+    gap 16px
+    align-items center
+    text-decoration none
+  &__wordmark
+    font-family var(--font-display)
+    font-size 32px
+    font-weight 750
+    line-height 1.1
+    letter-spacing -.08em
+  &__descriptor
+    max-width 140px
+    padding-left 16px
+    border-left 1px solid #ffffff66
+    font-size 10px
+    line-height 1.55
+    letter-spacing .015em
+  &__nav
+    display flex
+    align-items center
+    gap clamp(20px, 3vw, 40px)
+  &__link
+    padding-block 12px
+    font-size 13px
+    font-weight 550
+    text-decoration none
+    &:hover
+      text-decoration underline
+  &__location
+    display flex
+    gap 8px
+    align-items center
+    font-size 11px
+    font-weight 600
+    &::before
+      content ''
+      width 8px
+      height 8px
+      background var(--color-paper)
+      border-radius 50%
+  :focus-visible
+    outline-color var(--color-paper)
+
+@media (max-width: 900px)
+  .site-header__descriptor
+    display none
+
+@media (max-width: 600px)
+  .site-header
+    &__inner
+      min-height 112px
+      padding-block 18px 13px
+      flex-wrap wrap
+      gap 10px 16px
+    &__wordmark
+      font-size 30px
+    &__brand
+      margin-right auto
+    &__nav
+      order 3
+      width 100%
+      justify-content space-between
+      gap 10px
+    &__link
+      padding-block 7px
+      font-size 12px

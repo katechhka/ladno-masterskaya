@@ -1,0 +1,34 @@
+node_modules/
+dist/
+.generated/
+public/data/
+.cache/
+storage/
+test-results/
+playwright-report/
+*.log
+.vercel/
+.agents/
+skills-lock.json
+
+# Local credentials. Keep only the empty, documented example.
+.env*
+!.env.example
+
+# Runtime databases, backups and private keys never belong in source control.
+*.sqlite
+*.sqlite-*
+*.db
+*.db-*
+*.pem
+*.key
+*.p12
+*.pfx
+*.bak
+
+# Generated QA reports and screenshots may contain test contact details.
+docs/*-check*.json
+docs/screenshots/
+
+.DS_Store
+Thumbs.db

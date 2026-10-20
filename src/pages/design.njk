@@ -1,0 +1,89 @@
+{% from "partials/picture.njk" import picture %}
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ page.title }}</title>
+  <meta name="description" content="{{ page.description }}">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  {% for style in styles %}<link rel="stylesheet" href="{{ style }}">{% endfor %}
+</head>
+<body>
+  <a class="skip-link" href="#main">Перейти к содержимому</a>
+  {% include "partials/header.njk" %}
+  <main class="design-page" id="main">
+    <div class="design-note container"><span>Этап 2 / Новый дизайн</span><a href="#design-interface">Шрифты, цвета, детали ↘</a></div>
+
+    <section class="workshop-poster container" aria-labelledby="hero-title">
+      <div class="workshop-poster__meta"><span>Творческая мастерская в Туле</span><span>Для тех, кому хочется попробовать</span></div>
+      <h1 class="workshop-poster__title" id="hero-title"><span>Руки —</span> <span>в дело.</span></h1>
+      <p class="workshop-poster__intro">Глина, краски и другие хорошие поводы отложить телефон.<br> Приходите без опыта. Сделаем что-нибудь ваше.</p>
+
+      <div class="material-board" data-material-board>
+        <div class="material-board__selectors" role="group" aria-label="Рассмотреть материалы мастерской">
+          <button class="material-board__selector material-board__selector--active" type="button" aria-pressed="true" aria-controls="material-clay" data-material-select="clay"><span>01</span> Глина</button>
+          <button class="material-board__selector" type="button" aria-pressed="false" aria-controls="material-paint" data-material-select="paint"><span>02</span> Краска</button>
+          <button class="material-board__selector" type="button" aria-pressed="false" aria-controls="material-print" data-material-select="print"><span>03</span> Отпечаток</button>
+        </div>
+        <figure class="material-board__sample material-board__sample--left" aria-hidden="true">{{ picture(images['watercolor-botany'], 'material-board__sample-picture', '(max-width: 600px) 120px, 230px') }}<figcaption>Проба цвета / 02</figcaption></figure>
+        <div class="material-board__main">
+          <figure class="material-board__panel" data-material-panel="clay" id="material-clay">{{ picture(images['first-wheel'], 'material-board__picture', '(max-width: 600px) 100vw, 70vw', true) }}<figcaption class="material-board__caption"><span>Первый круг</span><span>Глина. Вода. Ваши руки.</span></figcaption></figure>
+          <figure class="material-board__panel" data-material-panel="paint" id="material-paint" hidden>{{ picture(images['quiet-morning'], 'material-board__picture', '(max-width: 600px) 100vw, 70vw') }}<figcaption class="material-board__caption"><span>Цвет тихого утра</span><span>Один холст. Ваше сочетание цветов.</span></figcaption></figure>
+          <figure class="material-board__panel" data-material-panel="print" id="material-print" hidden>{{ picture(images['personal-mark'], 'material-board__picture', '(max-width: 600px) 100vw, 70vw') }}<figcaption class="material-board__caption"><span>Свой знак</span><span>Рисунок. Резец. Первый оттиск.</span></figcaption></figure>
+        </div>
+        <figure class="material-board__sample material-board__sample--right" aria-hidden="true">{{ picture(images['character-plate'], 'material-board__sample-picture', '(max-width: 600px) 120px, 220px') }}<figcaption>Ручная работа / 03</figcaption></figure>
+        <div class="material-board__note" aria-hidden="true"><span>«Я не умею»?</span><strong>Тем<br>интереснее.</strong><svg viewBox="0 0 100 48" fill="none"><path d="M95 5C72 3 70 39 11 32m0 0 15-9M11 32l17 10" stroke="currentColor" stroke-width="2"/></svg></div>
+        <a class="material-board__ticket" href="/master-classes/"><span class="material-board__ticket-title">Выбрать<br>мастер-класс</span><span class="material-board__ticket-note">Материалы включены.<br>Любопытство — с вас.</span><svg viewBox="0 0 40 40" fill="none" aria-hidden="true"><path d="M6 34 34 6M7 6h27v27" stroke="currentColor" stroke-width="2.5"/></svg></a>
+      </div>
+      <div class="workshop-poster__bottom"><p>14 занятий / 7 направлений / Можно с нуля</p><a class="text-link" href="/schedule/">Посмотреть расписание <span aria-hidden="true">↗</span></a></div>
+    </section>
+
+    <section class="material-index container" aria-labelledby="directions-title">
+      <div class="section-heading"><p class="eyebrow">01 / Найдите свой материал</p><h2 class="section-title" id="directions-title">К чему<br>тянутся руки?</h2><p class="section-heading__aside">Можно начать с любого.<br>Инструменты уже на столе.</p></div>
+      <div class="material-index__rows">
+        {% for direction in designDirections %}<a class="material-index__row" href="/master-classes/?category={{ direction.id }}"><span class="material-index__number">0{{ loop.index }}</span>{{ picture(images[direction.image], 'material-index__picture', '90px') }}<h3 class="material-index__name">{{ direction.name }}</h3><span class="material-index__description">{{ direction.description }}</span><span class="material-index__count">{{ direction.count }} {{ direction.countLabel }}</span><span class="material-index__arrow" aria-hidden="true">↗</span></a>{% endfor %}
+      </div>
+    </section>
+
+    <section class="first-tries container" id="design-programs" aria-labelledby="programs-title">
+      <div class="section-heading"><p class="eyebrow">02 / Ваша первая работа</p><h2 class="section-title" id="programs-title">Начните<br>с маленького.</h2><p class="section-heading__aside">Уйдёте с вещью,<br>которую сделали сами.</p></div>
+      <div class="first-tries__sheets">
+        {% for id in ['handmade-cup', 'personal-mark'] %}{% set sheetNumber = loop.index %}{% for workshop in workshops %}{% if workshop.id == id %}
+        <article class="workshop-sheet{% if sheetNumber == 2 %} workshop-sheet--olive{% endif %}">
+          <div class="workshop-sheet__top"><span>Рабочий лист / 0{{ sheetNumber }}</span><span>{{ workshop.minAge }}+</span></div>
+          <a class="workshop-sheet__image-link" href="/master-classes/{{ workshop.slug }}/" tabindex="-1" aria-hidden="true">{{ picture(images[workshop.image], 'workshop-sheet__picture', '(max-width: 700px) 100vw, 45vw') }}</a>
+          <div class="workshop-sheet__content"><p class="workshop-sheet__category">{% for category in site.categories %}{% if category.id == workshop.category %}{{ category.name }}{% endif %}{% endfor %} / {{ workshop.durationMinutes }} минут</p><h3 class="workshop-sheet__title"><a href="/master-classes/{{ workshop.slug }}/">{{ workshop.title }}</a></h3><p class="workshop-sheet__description">{{ workshop.summary }}</p></div>
+          <div class="workshop-sheet__bottom"><span class="workshop-sheet__price">{{ workshop.priceRub | money }} <small>за человека</small></span><a class="workshop-sheet__more" href="/master-classes/{{ workshop.slug }}/" aria-label="Подробнее: {{ workshop.title }}">Подробнее <span aria-hidden="true">↗</span></a></div>
+        </article>
+        {% endif %}{% endfor %}{% endfor %}
+      </div>
+      <div class="first-tries__footer"><span>Оплата на месте после мастер-класса.</span><a class="button" href="/master-classes/">Все 14 занятий <span aria-hidden="true">↗</span></a></div>
+    </section>
+
+    <section class="open-studio" aria-labelledby="studio-title">
+      <div class="container"><p class="eyebrow">03 / Общий стол, отдельная история</p><h2 class="open-studio__title" id="studio-title">Здесь можно<br>начать с нуля.</h2><div class="open-studio__space">{{ picture(images['studio-wide'], 'open-studio__picture', '100vw') }}<div class="open-studio__note"><span class="open-studio__note-number">[ Ладно — это… ]</span><h3>Место для<br>вашего «попробую».</h3><p>Приходите одни или с друзьями. Мы приготовим материалы, покажем технику и поможем, когда понадобится.</p><a class="text-link" href="/rules/">Как всё устроено <span aria-hidden="true">↗</span></a></div></div><p class="open-studio__caption">Вымышленное пространство «Ладно» / Тула. Все изображения созданы для проекта.</p></div>
+    </section>
+
+    <section class="design-system container" id="design-interface" aria-labelledby="interface-title">
+      <div class="section-heading"><p class="eyebrow">04 / Внутренняя кухня</p><h2 class="section-title" id="interface-title">Всё по полочкам.</h2><p class="section-heading__aside">Новая типографика.<br>Общие компоненты.</p></div>
+      <p class="design-system__intro">Это страница просмотра дизайна. Ниже — образцы полей и состояний: данные не отправляются, отметки наличия мест не относятся к реальным сеансам.</p>
+      <div class="design-system__grid">
+        <div class="design-system__panel"><h3 class="design-system__label">[ 01 ] Цвет и шрифт</h3><div class="swatches"><div class="swatches__item swatches__item--paper"><span>Бумага</span><small>#F6F1E7</small></div><div class="swatches__item swatches__item--clay"><span>Глина</span><small>#AA432F</small></div><div class="swatches__item swatches__item--cobalt"><span>Кобальт</span><small>#304F96</small></div><div class="swatches__item swatches__item--olive"><span>Олива</span><small>#5A654B</small></div></div><p class="type-specimen">Аа Бб Вв →</p><p class="design-system__help"><strong>Unbounded</strong> — афишные заголовки.<br><strong>Onest</strong> — текст, цены и управление.</p></div>
+        <div class="design-system__panel"><h3 class="design-system__label">[ 02 ] Действия</h3><div class="design-system__row"><a class="button" href="#design-programs">Выбрать занятие <span aria-hidden="true">↗</span></a><a class="button button--secondary" href="/rules/">Правила</a><button class="button" type="button" disabled>Мест нет</button></div><div class="design-system__row"><span class="availability">Пример: есть места</span><span class="availability availability--full">Пример: мест нет</span></div></div>
+        <div class="design-system__panel"><h3 class="design-system__label">[ 03 ] Поля</h3><div class="design-system__fields"><label class="field"><span class="field__label">Ваше имя · образец поля</span><input class="field__input" placeholder="Как к вам обращаться" autocomplete="off" aria-describedby="name-help"><span class="field__help" id="name-help">Достаточно имени, без фамилии</span></label><label class="field"><span class="field__label">Email · образец ошибки</span><input class="field__input" type="email" value="почта без адреса" aria-invalid="true" aria-describedby="email-error" readonly><span class="field__error" id="email-error">Укажите email в формате name@example.test</span></label></div></div>
+        <div class="design-system__panel"><h3 class="design-system__label">[ 04 ] Подсказки</h3><p class="notice">Оплата на месте после мастер-класса. Онлайн-платежей нет.</p><p class="notice notice--success">Образец успешного сообщения. Это не подтверждение записи.</p><p class="notice notice--error">Образец ошибки: данные не загрузились. Попробуйте ещё раз.</p></div>
+      </div>
+    </section>
+
+    <section class="image-archive container" aria-labelledby="library-title">
+      <div class="section-heading"><p class="eyebrow">05 / Фотоархив мастерской</p><h2 class="section-title" id="library-title">Крупным планом.</h2><p class="section-heading__aside">24 сгенерированных кадра.<br>Материал, процесс, результат.</p></div>
+      <details class="image-library"><summary class="image-library__summary"><span>Открыть все изображения</span><span class="image-library__toggle" aria-hidden="true">+</span></summary><div class="image-library__grid">{% for id, image in images %}<figure class="image-library__item"><a href="{{ image.src }}" target="_blank" rel="noopener" aria-label="Открыть изображение: {{ image.alt }}">{{ picture(image, 'image-library__picture', '(max-width: 600px) 50vw, 25vw') }}</a><figcaption><span class="image-library__number">{{ loop.index }} /</span> {{ image.alt }}</figcaption></figure>{% endfor %}</div></details>
+      <p class="design-system__help">Мастерская вымышленная. Изображения созданы генератором и не являются фотографиями действующей организации.</p>
+    </section>
+  </main>
+  {% include "partials/footer.njk" %}
+  <script type="module" src="{{ entryScript }}"></script>
+</body>
+</html>

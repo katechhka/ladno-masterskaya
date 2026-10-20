@@ -1,0 +1,1 @@
+<nav class="breadcrumbs" aria-label="Хлебные крошки"><ol class="breadcrumbs__list"><li><a href="/">Главная</a></li>{% if page.kind == 'workshop' %}<li><a href="/master-classes/">Мастер-классы</a></li>{% endif %}<li aria-current="page">{% if page.kind == 'workshop' %}{{ page.workshop.title }}{% else %}{{ page.heading }}{% endif %}</li></ol></nav>

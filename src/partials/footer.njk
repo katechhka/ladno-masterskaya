@@ -1,0 +1,14 @@
+<footer class="site-footer">
+  <div class="site-footer__top container"><a class="site-footer__wordmark" href="/">ладно</a><p class="site-footer__message">Хороший день, чтобы<br>сделать что-то руками.</p></div>
+  <div class="site-footer__inner container">
+    <p class="site-footer__notice">{{ site.footerNotice }}</p>
+    <nav class="site-footer__links" aria-label="Документы и сведения о проекте">
+      <a class="site-footer__link" href="/rules/">Правила посещения</a>
+      <a class="site-footer__link" href="/privacy/">Политика обработки данных</a>
+      <a class="site-footer__link" href="/consent/">Согласие на обработку</a>
+      <button class="site-footer__link" type="button" data-cookie-open>О cookie</button>
+      <a class="site-footer__link" href="/design/">Визуальная система</a>
+    </nav>
+  </div>
+</footer>
+{% include "partials/cookie-notice.njk" %}

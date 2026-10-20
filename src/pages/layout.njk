@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ page.title }}</title>
+  <meta name="description" content="{{ page.description }}">
+  <meta name="robots" content="noindex, follow">
+  <meta name="theme-color" content="#304f96">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:site_name" content="Ладно — мастерская ручных открытий">
+  <meta property="og:title" content="{{ page.title }}">
+  <meta property="og:description" content="{{ page.description }}">
+  <meta property="og:image" content="{{ publicOrigin }}{{ page.shareImage }}">
+  <meta name="twitter:card" content="summary_large_image">
+  {% if publicOrigin %}<link rel="canonical" href="{{ publicOrigin }}{{ page.path }}"><meta property="og:url" content="{{ publicOrigin }}{{ page.path }}">{% endif %}
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  {% for style in styles %}<link rel="stylesheet" href="{{ style }}">{% endfor %}
+</head>
+<body data-page="{{ page.kind }}"{% if page.kind == 'workshop' %} data-workshop-id="{{ page.workshop.id }}"{% endif %}>
+  <a class="skip-link" href="#main">Перейти к содержимому</a>
+  {% include "partials/header.njk" %}
+  <main id="main" class="site-main">{% block content %}{% endblock %}</main>
+  {% include "partials/footer.njk" %}
+  <script type="module" src="{{ entryScript }}"></script>
+</body>
+</html>

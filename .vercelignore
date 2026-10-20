@@ -1,0 +1,19 @@
+# Только исходники приложения и подготовленные публичные ресурсы.
+# Настройки production добавляются отдельно средствами Vercel.
+.env
+.env.*
+.vercel
+.cache
+.generated
+node_modules
+dist
+storage
+docs
+tests
+test-results
+playwright-report
+src/assets/images/originals
+*.log
+*.sqlite
+*.sqlite-wal
+*.sqlite-shm

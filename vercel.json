@@ -1,0 +1,21 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": null,
+  "buildCommand": "npm run build:vercel",
+  "outputDirectory": "dist",
+  "installCommand": "npm ci --include=dev",
+  "regions": ["dub1"],
+  "functions": {
+    "api/index.mjs": {
+      "maxDuration": 60,
+      "includeFiles": "{data/**,src/pages/**,src/partials/**,dist/.vite/manifest.json,dist/404.html,server/db/migrations/**}"
+    }
+  },
+  "routes": [
+    {"src":"/\\.vite(?:/.*)?","dest":"/api/index.mjs"},
+    {"src":"/404.html","dest":"/api/index.mjs"},
+    {"handle": "filesystem"},
+    {"src": "/(.*)", "dest": "/api/index.mjs"}
+  ],
+  "crons": [{"path":"/api/maintenance","schedule":"15 0 * * *"}]
+}

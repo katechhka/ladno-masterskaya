@@ -1,0 +1,786 @@
+.design-note
+  display flex
+  align-items center
+  justify-content space-between
+  gap 20px
+  padding-block 13px
+  border-bottom 1px solid var(--color-line)
+  color var(--color-muted)
+  font-size 11px
+  a
+    color var(--color-cobalt)
+    text-decoration none
+    &:hover
+      text-decoration underline
+
+.workshop-poster
+  padding-top 25px
+  &__meta
+    display flex
+    justify-content space-between
+    gap 24px
+    font-size 11px
+    font-weight 550
+    text-transform uppercase
+    letter-spacing .035em
+  &__title
+    display flex
+    justify-content space-between
+    gap .12em
+    margin-block 24px 14px
+    font-family var(--font-display)
+    font-size clamp(48px, 7.55vw, 108px)
+    font-weight 750
+    letter-spacing -.055em
+    word-spacing .12em
+    line-height 1.15
+    color var(--color-cobalt)
+    text-transform uppercase
+    span
+      white-space nowrap
+  &__intro
+    margin-bottom 0
+    text-align center
+    font-size 16px
+    line-height 1.65
+  &__bottom
+    display flex
+    align-items center
+    justify-content space-between
+    gap 24px
+    padding-block 15px 21px
+    border-bottom 2px solid var(--color-ink)
+    p
+      margin 0
+      color var(--color-muted)
+      font-size 12px
+
+.material-board
+  position relative
+  margin-top 23px
+  padding-top 50px
+  padding-bottom 49px
+  &__selectors
+    position relative
+    z-index 5
+    display grid
+    grid-template-columns repeat(3, minmax(0, 1fr))
+    width 73%
+    margin 0 auto 16px
+    border 1px solid var(--color-ink)
+  &__selector
+    position relative
+    min-height 46px
+    padding 10px 8px
+    border 0
+    border-right 1px solid var(--color-ink)
+    background #e5dfd2
+    color var(--color-ink)
+    font-size 13px
+    font-weight 600
+    transform none
+    &:last-child
+      border-right 0
+    span
+      margin-right 9px
+      font-size 10px
+      font-weight 400
+    &:hover
+      background #d8d1c0
+    &--active
+      background var(--color-cobalt)
+      color var(--color-white)
+      transform none
+      &:hover
+        background var(--color-cobalt)
+  &__main
+    position relative
+    z-index 2
+    width 73%
+    margin-inline auto
+    padding 9px 9px 0
+    border 1px solid var(--color-ink)
+    background var(--color-white)
+    transform rotate(-1.5deg)
+  &__panel
+    margin 0
+  &__picture
+    display block
+    height clamp(290px, 26vw, 390px)
+    img
+      width 100%
+      height 100%
+      object-fit cover
+      object-position 50% 65% !important
+  &__caption
+    display flex
+    justify-content space-between
+    gap 20px
+    padding-block 11px
+    font-size 10px
+    line-height 1.4
+  &__sample
+    position absolute
+    z-index 3
+    width 19%
+    padding 7px 7px 0
+    border 1px solid var(--color-ink)
+    background var(--color-white)
+    pointer-events none
+    figcaption
+      padding 9px 2px
+      font-size 10px
+    &--left
+      left .3%
+      top 112px
+      transform rotate(-9deg)
+    &--right
+      right 0
+      top 232px
+      transform rotate(9deg)
+  &__sample-picture
+    display block
+    aspect-ratio 1 / 1
+    img
+      width 100%
+      height 100%
+      object-fit cover
+  &__note
+    position absolute
+    z-index 3
+    top 42px
+    right 0
+    width 165px
+    color var(--color-cobalt)
+    transform rotate(5deg)
+    span
+      display block
+      margin-bottom 7px
+      font-size 12px
+    strong
+      font-family var(--font-display)
+      font-size 19px
+      font-weight 500
+      letter-spacing -.05em
+      line-height 1.3
+    svg
+      display block
+      width 90px
+      height 45px
+      margin-left 4px
+  &__ticket
+    position absolute
+    bottom 21px
+    left 23%
+    z-index 4
+    display flex
+    align-items center
+    justify-content space-between
+    gap 25px
+    width 54%
+    padding 21px 28px
+    border 2px solid var(--color-ink)
+    background var(--color-clay)
+    box-shadow 5px 5px 0 var(--color-ink)
+    color var(--color-white)
+    text-decoration none
+    transform rotate(1deg)
+    transition transform .2s, background .2s
+    &:hover
+      background var(--color-clay-hover)
+      transform rotate(0deg) translateY(-3px)
+    svg
+      flex-shrink 0
+      width 34px
+      height 34px
+    &:focus-visible
+      outline-offset 8px
+  &__ticket-title
+    font-family var(--font-display)
+    font-size clamp(16px, 1.5vw, 21px)
+    font-weight 550
+    line-height 1.4
+    letter-spacing -.025em
+  &__ticket-note
+    font-size 12px
+    line-height 1.5
+
+.section-heading
+  display grid
+  grid-template-columns 1fr auto
+  align-items end
+  gap 10px 32px
+  margin-bottom 35px
+  .eyebrow
+    grid-column 1 / -1
+    margin-bottom 13px
+    color var(--color-clay)
+  .section-title
+    margin-bottom 0
+  &__aside
+    margin 0 0 3px
+    color var(--color-muted)
+    font-size 14px
+    line-height 1.6
+
+.material-index
+  padding-top var(--space-section)
+  &__rows
+    border-top 2px solid var(--color-ink)
+  &__row
+    display grid
+    grid-template-columns 35px 87px minmax(200px, 1fr) minmax(160px, .7fr) 78px 40px
+    align-items center
+    gap 25px
+    min-height 105px
+    padding-block 14px
+    border-bottom 1px solid #bcb5a7
+    text-decoration none
+    transition color .2s, background .2s
+    &:hover
+      color var(--color-cobalt)
+      background #e9e4d8
+  &__number
+    color var(--color-clay)
+    font-size 13px
+  &__picture
+    display block
+    width 87px
+    aspect-ratio 4 / 3
+    img
+      width 100%
+      height 100%
+      object-fit cover
+  &__name
+    margin 0
+    font-family var(--font-display)
+    font-size clamp(17px, 1.7vw, 25px)
+    font-weight 550
+    line-height 1.4
+    letter-spacing -.025em
+  &__description
+    max-width 250px
+    color var(--color-muted)
+    font-size 13px
+    line-height 1.5
+  &__count
+    font-size 12px
+    white-space nowrap
+  &__arrow
+    justify-self end
+    font-size 30px
+    line-height 1
+
+.first-tries
+  padding-top var(--space-section)
+  padding-bottom var(--space-section)
+  &__sheets
+    display grid
+    grid-template-columns repeat(2, minmax(0, 1fr))
+    align-items start
+    gap clamp(24px, 5vw, 80px)
+  &__footer
+    display flex
+    align-items center
+    justify-content space-between
+    gap 30px
+    margin-top 46px
+    font-size 13px
+    color var(--color-muted)
+
+.workshop-sheet
+  min-width 0
+  border 1px solid var(--color-ink)
+  background var(--color-white)
+  box-shadow 8px 8px 0 #d9d2c4
+  &--olive
+    margin-top 78px
+    background var(--color-olive)
+    box-shadow 8px 8px 0 #d9d2c4
+    color var(--color-white)
+  &__top
+    display flex
+    align-items center
+    justify-content space-between
+    gap 20px
+    padding 16px 20px
+    border-bottom 1px solid currentColor
+    font-size 11px
+    letter-spacing .03em
+    text-transform uppercase
+  &__image-link
+    display block
+    margin 16px 16px 0
+    overflow hidden
+  &__picture
+    display block
+    aspect-ratio 16 / 10
+    img
+      width 100%
+      height 100%
+      object-fit cover
+      transition transform .4s
+  &__image-link:hover &__picture img
+    transform scale(1.025)
+  &__content
+    padding 24px 24px 26px
+  &__category
+    margin-bottom 13px
+    font-size 11px
+    text-transform uppercase
+    letter-spacing .04em
+  &__title
+    margin-bottom 15px
+    font-family var(--font-display)
+    font-size clamp(20px, 2vw, 29px)
+    font-weight 550
+    letter-spacing -.025em
+    line-height 1.35
+    a
+      text-decoration none
+      &:hover
+        text-decoration underline
+  &__description
+    max-width 400px
+    margin-bottom 0
+    min-height 50px
+    font-size 15px
+  &__bottom
+    display flex
+    align-items center
+    justify-content space-between
+    flex-wrap wrap
+    gap 15px
+    padding 20px 24px
+    border-top 1px dashed currentColor
+  &__price
+    font-family var(--font-display)
+    font-size 21px
+    font-weight 500
+    letter-spacing -.04em
+    small
+      display block
+      margin-top 3px
+      font-family var(--font-body)
+      font-size 11px
+      font-weight 400
+      letter-spacing 0
+  &__more
+    display inline-flex
+    align-items center
+    gap 12px
+    min-height 44px
+    font-size 13px
+    font-weight 600
+    span
+      font-size 28px
+  &--olive :focus-visible
+    outline-color var(--color-white)
+
+.open-studio
+  padding-block 65px 26px
+  background var(--color-cobalt)
+  color var(--color-paper)
+  .eyebrow
+    margin-bottom 25px
+  &__title
+    margin-bottom 35px
+    font-family var(--font-display)
+    font-size clamp(34px, 5.2vw, 75px)
+    font-weight 650
+    line-height 1.2
+    letter-spacing -.04em
+    word-spacing .12em
+    text-transform uppercase
+  &__space
+    position relative
+    padding-bottom 40px
+  &__picture
+    display block
+    height 540px
+    img
+      width 100%
+      height 100%
+      object-fit cover
+  &__note
+    position absolute
+    right 35px
+    bottom 0
+    width 350px
+    padding 29px
+    border 1px solid var(--color-ink)
+    background var(--color-paper)
+    color var(--color-ink)
+    box-shadow 7px 7px 0 var(--color-ink)
+    transform rotate(2deg)
+    h3
+      margin-block 18px
+      font-family var(--font-display)
+      font-size 22px
+      line-height 1.4
+      font-weight 500
+      letter-spacing -.045em
+    p
+      margin-bottom 15px
+      font-size 14px
+  &__note-number
+    font-size 11px
+    font-weight 500
+    text-transform uppercase
+  &__caption
+    margin-top 24px
+    margin-bottom 0
+    font-size 11px
+
+.design-system
+  padding-top var(--space-section)
+  &__intro
+    max-width 700px
+    margin-bottom 35px
+    color var(--color-muted)
+    font-size 14px
+  &__grid
+    display grid
+    grid-template-columns repeat(2, minmax(0, 1fr))
+    border-top 2px solid var(--color-ink)
+    border-left 1px solid var(--color-ink)
+  &__panel
+    min-width 0
+    padding 28px
+    border-right 1px solid var(--color-ink)
+    border-bottom 1px solid var(--color-ink)
+  &__label
+    margin-bottom 30px
+    font-size 12px
+    font-weight 650
+    text-transform uppercase
+  &__row
+    display flex
+    flex-wrap wrap
+    align-items flex-start
+    gap 20px
+    margin-bottom 30px
+  &__fields
+    display grid
+    gap 24px
+  &__help
+    margin-top 20px
+    font-size 12px
+    color var(--color-muted)
+
+.swatches
+  display grid
+  grid-template-columns repeat(4, minmax(0, 1fr))
+  border 1px solid var(--color-ink)
+  &__item
+    display flex
+    justify-content flex-end
+    flex-direction column
+    min-height 125px
+    padding 13px 10px
+    gap 5px
+    font-size 12px
+    &:not(:last-child)
+      border-right 1px solid var(--color-ink)
+    small
+      font-size 9px
+    &--paper
+      background var(--color-paper)
+    &--clay
+      background var(--color-clay)
+      color var(--color-white)
+    &--cobalt
+      background var(--color-cobalt)
+      color var(--color-white)
+    &--olive
+      background var(--color-olive)
+      color var(--color-white)
+
+.type-specimen
+  margin-block 25px 0
+  font-family var(--font-display)
+  font-size clamp(25px, 3vw, 40px)
+  font-weight 600
+  line-height 1.4
+  letter-spacing -.04em
+  color var(--color-cobalt)
+
+.image-archive
+  padding-block var(--space-section)
+
+.image-library
+  &__summary
+    display flex
+    justify-content space-between
+    align-items center
+    min-height 72px
+    padding 15px 22px
+    border 1px solid var(--color-ink)
+    background var(--color-white)
+    cursor pointer
+    font-size 16px
+    font-weight 600
+    list-style none
+    &::-webkit-details-marker
+      display none
+  &__toggle
+    font-size 30px
+    font-weight 400
+  &[open] &__toggle
+    transform rotate(45deg)
+  &__grid
+    display grid
+    grid-template-columns repeat(4, minmax(0, 1fr))
+    gap 28px 20px
+    padding-top 30px
+  &__picture
+    display block
+    aspect-ratio 3 / 2
+    img
+      width 100%
+      height 100%
+      object-fit cover
+  &__item figcaption
+    margin-top 12px
+    font-size 12px
+    line-height 1.5
+    color var(--color-muted)
+  &__number
+    color var(--color-clay)
+    font-weight 650
+
+@media (max-width: 1100px)
+  .material-index
+    &__row
+      grid-template-columns 25px 75px minmax(190px, 1fr) 78px 35px
+      gap 20px
+    &__description
+      display none
+    &__picture
+      width 75px
+  .material-board
+    &__note
+      right -5px
+      width 120px
+      strong
+        font-size 15px
+    &__ticket-note
+      display none
+    &__ticket
+      width 49%
+      left 25.5%
+    &__sample--right
+      top 235px
+
+@media (max-width: 800px)
+  .workshop-poster
+    &__title
+      flex-direction column
+      align-items center
+      font-size clamp(60px, 10vw, 85px)
+      margin-block 30px 20px
+      line-height 1.2
+    &__meta span:last-child
+      display none
+  .material-board
+    padding-top 35px
+    &__selectors
+      width 83%
+    &__main
+      width 83%
+    &__sample
+      width 23%
+      &--left
+        top 126px
+        left 0
+      &--right
+        top 245px
+        right 0
+    &__note
+      display none
+    &__ticket
+      left 22%
+      width 56%
+      padding 18px 24px
+  .first-tries__sheets
+    gap 26px
+  .workshop-sheet
+    &__content
+      padding 22px 18px
+    &__bottom
+      padding 16px 18px
+    &__description
+      min-height 95px
+    &__more
+      gap 6px
+      font-size 12px
+  .open-studio
+    &__picture
+      height 460px
+    &__note
+      right 20px
+      width 300px
+      padding 22px
+  .design-system__panel
+    padding 22px
+
+@media (max-width: 700px)
+  .section-heading
+    grid-template-columns 1fr
+    gap 14px
+    .eyebrow
+      margin-bottom 0
+    &__aside
+      font-size 13px
+  .first-tries
+    &__sheets
+      grid-template-columns 1fr
+      gap 30px
+    &__footer
+      align-items flex-start
+      flex-direction column
+      gap 20px
+  .workshop-sheet
+    &--olive
+      margin-top 0
+    &__description
+      min-height 0
+    &__title
+      font-size 23px
+  .design-system__grid
+    grid-template-columns 1fr
+  .image-library__grid
+    grid-template-columns repeat(3, minmax(0, 1fr))
+
+@media (max-width: 600px)
+  .design-note
+    font-size 10px
+    a
+      font-size 10px
+  .workshop-poster
+    padding-top 16px
+    &__meta
+      font-size 10px
+    &__title
+      align-items flex-start
+      font-size clamp(38px, 11.8vw, 67px)
+      margin-block 16px 12px
+      line-height 1.25
+    &__intro
+      max-width 370px
+      text-align left
+      font-size 14px
+      br
+        display none
+    &__bottom
+      align-items flex-start
+      flex-direction column-reverse
+      gap 8px
+      padding-top 8px
+      p
+        font-size 10px
+  .material-board
+    margin-inline -10px
+    margin-top 6px
+    padding-top 6px
+    padding-bottom 62px
+    &__selectors
+      width 96%
+      padding-left 0
+    &__selector
+      padding 10px 12px
+      min-height 42px
+      font-size 12px
+      span
+        margin-right 5px
+        font-size 9px
+    &__main
+      width 96%
+      transform rotate(-1.4deg)
+      padding 6px 6px 0
+    &__picture
+      height 275px
+    &__caption
+      padding 9px 2px
+      font-size 9px
+      span:last-child
+        display none
+    &__sample
+      width 105px
+      padding 4px 4px 0
+      figcaption
+        font-size 8px
+        padding 6px 1px
+      &--left
+        left -2px
+        top 202px
+        transform rotate(-8deg)
+      &--right
+        right 0
+        top 238px
+        transform rotate(7deg)
+    &__ticket
+      width 76%
+      left 12%
+      bottom 24px
+      padding 15px 17px
+      gap 14px
+      box-shadow 3px 3px 0 var(--color-ink)
+      svg
+        width 28px
+        height 28px
+    &__ticket-title
+      font-size 15px
+  .material-index
+    &__row
+      grid-template-columns 18px 53px minmax(0, 1fr) 25px
+      gap 12px
+      min-height 86px
+    &__picture
+      width 53px
+      aspect-ratio 1 / 1
+    &__number
+      font-size 10px
+    &__name
+      font-size 13px
+      line-height 1.5
+    &__count
+      display none
+    &__arrow
+      font-size 25px
+  .open-studio
+    padding-top 40px
+    &__title
+      font-size clamp(27px, 7.1vw, 42px)
+      letter-spacing -.055em
+    &__picture
+      height auto
+      aspect-ratio 4 / 3
+    &__space
+      padding-bottom 0
+    &__note
+      position relative
+      right auto
+      bottom auto
+      width calc(100% - 12px)
+      margin 20px 6px 10px
+      transform rotate(-1deg)
+    &__caption
+      font-size 10px
+  .design-system__panel
+    padding 22px 17px
+  .swatches__item
+    min-height 110px
+    padding 10px 6px
+    font-size 10px
+    small
+      font-size 8px
+  .image-library
+    &__summary
+      padding-inline 15px
+      font-size 14px
+    &__grid
+      grid-template-columns repeat(2, minmax(0, 1fr))
+      gap 24px 12px
+    &__item figcaption
+      font-size 11px

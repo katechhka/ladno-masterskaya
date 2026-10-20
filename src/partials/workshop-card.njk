@@ -1,0 +1,8 @@
+{% from "partials/picture.njk" import picture %}
+{% macro workshopCard(workshop, images, categories, number=0, filterable=false) %}
+<article class="catalog-card"{% if filterable %} data-catalog-card data-id="{{ workshop.id }}" data-category="{{ workshop.category }}" data-age="{{ workshop.minAge }}" data-price="{{ workshop.priceRub }}" data-duration="{{ workshop.durationMinutes }}" data-search="{{ workshop.title }} {{ workshop.summary }}"{% endif %}>
+  <a class="catalog-card__image-link" href="/master-classes/{{ workshop.slug }}/" tabindex="-1" aria-hidden="true">{{ picture(images[workshop.image], 'catalog-card__picture', '(max-width: 650px) 100vw, (max-width: 1100px) 50vw, 33vw') }}<span class="catalog-card__age">{{ workshop.minAge }}+</span></a>
+  <div class="catalog-card__body"><p class="catalog-card__meta"><span>{% for category in categories %}{% if category.id == workshop.category %}{{ category.name }}{% endif %}{% endfor %}</span><span>{{ workshop.durationMinutes }} мин</span></p><h3 class="catalog-card__title"><a href="/master-classes/{{ workshop.slug }}/">{{ workshop.title }}</a></h3><p class="catalog-card__summary">{{ workshop.summary }}</p></div>
+  <div class="catalog-card__footer"><span class="catalog-card__price">{{ workshop.priceRub | money }}<small>за участника</small></span><a class="catalog-card__more" href="/master-classes/{{ workshop.slug }}/" aria-label="Подробнее: {{ workshop.title }}">О занятии <span aria-hidden="true">↗</span></a></div>
+</article>
+{% endmacro %}

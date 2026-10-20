@@ -1,0 +1,19 @@
+{% extends "pages/layout.njk" %}
+{% from "partials/workshop-card.njk" import workshopCard %}
+{% block content %}
+<div class="container">{% include "partials/breadcrumbs.njk" %}<header class="page-heading"><p class="eyebrow">{{ workshops | length }} способов попробовать</p><h1 class="page-heading__title">Что сделаем<br>своими руками?</h1><p class="page-heading__intro">Выбирайте по материалу, настроению или тому самому «давно хотелось». Все занятия подходят новичкам.</p></header></div>
+<section class="catalog container" aria-label="Каталог мастер-классов" data-catalog>
+  <form class="catalog-filter" data-catalog-form role="search">
+    <label class="field catalog-filter__search"><span class="field__label">Найти занятие</span><input class="field__input" type="search" name="q" placeholder="Например, чашка или акварель" maxlength="100" autocomplete="off"></label>
+    <label class="field catalog-filter__category"><span class="field__label">Направление</span><select class="field__input" name="category"><option value="">Все направления</option>{% for category in site.categories %}<option value="{{ category.id }}">{{ category.name }}</option>{% endfor %}</select></label>
+    <label class="field catalog-filter__age"><span class="field__label">Возраст участника</span><select class="field__input" name="age"><option value="">Любой возраст</option>{% for age in [6,7,8,9,10,11,12,13,14,15,16,17] %}<option value="{{ age }}">{{ age }} лет</option>{% endfor %}<option value="18">18+ лет</option></select></label>
+    <label class="field catalog-filter__sort"><span class="field__label">Порядок</span><select class="field__input" name="sort"><option value="default">Как в мастерской</option><option value="price-asc">Сначала дешевле</option><option value="price-desc">Сначала дороже</option><option value="duration-asc">Сначала короче</option><option value="duration-desc">Сначала дольше</option></select></label>
+    <button class="button button--secondary catalog-filter__reset" type="reset">Сбросить</button>
+  </form>
+  <div class="catalog__result-bar"><p class="catalog__count" data-catalog-count role="status" aria-live="polite">{{ workshops | length }} занятий</p><a class="text-link" href="/schedule/">Удобнее выбрать по дате? ↗</a></div>
+  <div class="catalog-grid" data-catalog-grid>{% for workshop in workshops %}{{ workshopCard(workshop, images, site.categories, loop.index, true) }}{% endfor %}</div>
+  <div class="empty-state" data-catalog-empty hidden><span class="empty-state__mark" aria-hidden="true">[ 0 ]</span><h2>Такого сочетания пока нет.</h2><p>Попробуйте другое слово, направление или возраст. Все наши занятия можно посмотреть без фильтров.</p><button class="button" type="button" data-catalog-reset>Показать все занятия ↗</button></div>
+  <noscript><p class="notice">Без JavaScript показаны все программы. Поиск, фильтры и сортировка требуют JavaScript.</p></noscript>
+  <p class="section-note">Возраст — минимальный для участия. Детям младше 14 лет нужен сопровождающий взрослый. Материалы включены, цена указана за одного участника.</p>
+</section>
+{% endblock %}

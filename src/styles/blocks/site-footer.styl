@@ -1,0 +1,79 @@
+.site-footer
+  padding-top 38px
+  border-top 2px solid var(--color-ink)
+  background var(--color-clay)
+  color var(--color-white)
+  &__top
+    display flex
+    justify-content space-between
+    align-items flex-end
+    gap 32px
+    padding-bottom 34px
+  &__wordmark
+    font-family var(--font-display)
+    font-weight 750
+    font-size clamp(52px, 10vw, 132px)
+    line-height 1
+    letter-spacing -.08em
+    text-decoration none
+  &__message
+    max-width 250px
+    margin 0 0 8px
+    font-size 17px
+    line-height 1.4
+  &__inner
+    display grid
+    grid-template-columns minmax(220px, 1fr) minmax(0, 2fr)
+    align-items start
+    gap 24px
+    padding-block 24px
+    border-top 1px solid #ffffff66
+  &__notice
+    max-width 480px
+    margin 0
+    font-size 12px
+  &__links
+    display flex
+    flex-wrap wrap
+    align-items flex-start
+    gap 0 24px
+    font-size 12px
+  &__link
+    display inline-flex
+    align-items center
+    min-height 44px
+    max-width 100%
+    padding 10px 0
+    border 0
+    background transparent
+    color inherit
+    font-family inherit
+    font-size 12px
+    font-weight 500
+    line-height 20px
+    text-align left
+    text-decoration underline
+    text-underline-offset 5px
+    cursor pointer
+    &:hover
+      text-decoration-thickness 2px
+  :focus-visible
+    outline-color var(--color-white)
+
+@media (max-width: 900px)
+  .site-footer__inner
+    grid-template-columns 1fr
+
+@media (max-width: 700px)
+  .site-footer
+    &__top
+      align-items flex-start
+      flex-direction column
+      gap 24px
+    &__inner
+      grid-template-columns 1fr
+    &__message
+      font-size 16px
+    &__links
+      display grid
+      justify-items start
