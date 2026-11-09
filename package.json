@@ -41,7 +41,9 @@
     "test:backup": "node --test tests/backups.test.mjs",
     "test:async": "node --test tests/async-storage.test.mjs",
     "cloud:check": "node --env-file-if-exists=.env scripts/check-cloud.mjs",
-    "test:all": "node scripts/check-all.mjs"
+    "test:all": "node scripts/check-all.mjs",
+    "build:pages": "node scripts/build-pages.mjs",
+    "pages-demo:check": "node scripts/check-pages-demo.mjs"
   },
   "dependencies": {
     "@fontsource-variable/onest": "^5.3.1",

@@ -1,5 +1,6 @@
 let request;
 async function fetchJSON(url) {
+  if (import.meta.env.VITE_STATIC_DEMO === 'true') url = `${import.meta.env.BASE_URL}data/${url.endsWith('catalog') ? 'catalog' : 'schedule'}.json`;
   const controller = new AbortController();
   const timer = setTimeout(() => controller.abort(), 8000);
   try {

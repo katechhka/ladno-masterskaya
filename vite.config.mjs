@@ -26,10 +26,18 @@ function notFoundMiddleware() {
 }
 
 export default defineConfig({
+  base: process.env.PAGES_BASE || '/',
   root: '.generated',
   appType: 'mpa',
   publicDir: '../public',
   plugins: [{
+    name: 'pages-demo-paths',
+    enforce: 'pre',
+    transform(code, id) {
+      if (!process.env.PAGES_BASE || !id.includes('/src/scripts/') || !id.endsWith('.js')) return;
+      return code.replace(/(['"`])\/(?=(?:master-classes|schedule|booking|media|privacy|consent|rules|cookies)\/)/g, `$1${process.env.PAGES_BASE}`);
+    }
+  }, {
     name: 'ladno-pages',
     config(_config, { mode }) {
       const environment = loadEnv(mode, resolve('.'), '');

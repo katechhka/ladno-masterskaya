@@ -40,7 +40,8 @@ export async function initBookingPreview() {
   const $root = $('[data-booking-preview]');
   if (document.body.dataset.page === 'manage') return manage($root);
   const params = new URLSearchParams(location.search);
-  let pending = pendingRead(params.get('session'));
+  const staticDemo = import.meta.env.VITE_STATIC_DEMO === 'true';
+  let pending = staticDemo ? null : pendingRead(params.get('session'));
   let recoveryChecked = false;
   async function load() {
     try {
@@ -104,6 +105,7 @@ export async function initBookingPreview() {
       const $heading = $('<h2>').text('Всё верно?');
       const $confirm = $('<button>', { class: 'button', type: 'button', 'data-confirm-booking': '' }).text('Подтвердить бронь');
       const $back = $('<button>', { class: 'text-link', type: 'button' }).text('Изменить данные');
+      if (staticDemo) $confirm.text('Завершить демонстрацию');
       const $error = $('<div>');
       $review.append($heading, sessionSummary(session, quantity), $('<p>', { class: 'booking-form__payment' }).text('Оплата на месте после мастер-класса'),
         $('<p>').text(`${payload.name} · ${payload.phone} · ${payload.email}`), $('<p>').text('Демонстрационная запись. Письма и SMS не отправляются.'), $error,
@@ -116,6 +118,13 @@ export async function initBookingPreview() {
         $form.find('[name=name]').trigger('focus');
       });
       $confirm.on('click', async () => {
+        if (staticDemo) {
+          $root.empty().append($('<h2>', { tabindex: '-1' }).text('Демонстрация завершена'),
+            notice('Бронь не создана. Контакты никуда не отправлены и не сохранены. Telegram в этой версии не подключён.'),
+            $('<a>', { class: 'button', href: `${import.meta.env.BASE_URL}schedule/` }).text('Вернуться к расписанию'));
+          $root.find('h2').trigger('focus');
+          return;
+        }
         if (busy) return;
         busy = true; $confirm.prop('disabled', true).text('Сохраняем…'); $back.prop('disabled', true); $error.empty();
         pending = { key, token }; pendingWrite(session.id, pending);
